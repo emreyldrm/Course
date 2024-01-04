@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    
+    <script>
+        var fruits = ["Banana","Orange","Apple","Mango"];
+
+        function push(){
+            fruits.push("Kiwi");
+            console.log(fruits);
+        }
+        function pop(){
+            fruits.pop();
+            console.log(fruits);
+        }
+        function unshift(){
+            fruits.unshift("Kiwi");
+            console.log(fruits);
+        }
+        function shift(){
+            fruits.shift();
+            console.log(fruits);
+        }
+        function sort(){
+            fruits.sort();
+            console.log(fruits);
+        }
+        function reverse(){
+            fruits.reverse();
+            console.log(fruits);
+        }
+
+
+    </script>
+
+</head>
+<body>
+    <h1>Arrays (diziler)</h1>
+    <hr>
+    <button onclick="push()">Push(Veri Ekleme - Sona)</button>
+    <button onclick="pop()">Pop(Veri Çıkarma - Sondan)</button>
+    <button onclick="unshift()">unShift(Veri Ekleme - Başa)</button>
+    <button onclick="shift()">Shift(Veri Çıkarma - Baştan)</button>
+
+
+    <button onclick="sort()">Sort - Sıralama</button>
+    <button onclick="reverse()">Reverse - Ters Çevirme</button>
+
+
+</body>
+</html>

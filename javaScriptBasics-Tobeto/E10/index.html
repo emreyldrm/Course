@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    
+    <script>
+        function run(){
+            var p = document.getElementById("p1");
+            p.innerHTML = "Merhaba Dünya!";
+        }
+        function loadList(){
+            var fruits = ["Banana","Orange","Kiwi","Apple","Mango"];
+
+            var ul = document.getElementById("list");
+            ul.innerHTML="";
+            for(var i = 0; i< fruits.length; i++){
+                var item = fruits[i];
+                var li = document.createElement("li");
+                li.innerHTML = "<b>" + item + "</b>";
+
+                ul.appendChild(li);
+            }
+        }
+        function onLoad(){
+            console.log("onload çalıştı");
+            var b = document.getElementById("btn");
+            b.onclick = run;
+        }
+    </script>
+
+</head>
+<body onload="onLoad()">
+    <h1>DOM Manipulation</h1>
+    <hr>
+    <p id="p1">Hello World!</p>
+    <button id="btn">Metin Ekle</button>
+    <hr>
+
+    <button onclick="loadList()">Listeyi Doldur!</button>
+    <ul id="list">
+
+    </ul>
+    
+</body>
+</html>

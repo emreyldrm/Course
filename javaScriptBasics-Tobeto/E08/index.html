@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+    <script>
+        var age = 15;
+
+        function ageUp() {
+            age++;
+            if (age < 18) {
+                console.log("Yaşınız 18 den küçüktür.");
+            } else if (age > 18) {
+                console.log("Yaşınız 18 den büyüktür.");
+            } else {
+                console.log("Yaşınız 18 dir.");
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <h1>Conditions (Koşullar)</h1>
+    <hr>
+
+    <button onclick="ageUp()">Yaş arttır</button>
+
+</body>
+
+</html>
