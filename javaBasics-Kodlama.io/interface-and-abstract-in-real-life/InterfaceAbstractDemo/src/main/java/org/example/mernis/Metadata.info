@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<EasyWSDL>
+  <Info>
+    <Version>8.0.1.0</Version>
+    <AccountType>Basic</AccountType>
+    <LibrariesFolder>easywsdl</LibrariesFolder>
+    <MainClass>LKNKPSPublicSoap</MainClass>
+  </Info>
+  <Settings>
+    <Url>https://tckimlik.nvi.gov.tr/Service/KPSPublic.asmx</Url>
+    <ClassPrefix/>
+    <PackageName>org.example.mernis</PackageName>
+    <AddDocumentation>true</AddDocumentation>
+    <EnableAdvancedFeatures>true</EnableAdvancedFeatures>
+    <EnableMTOM>false</EnableMTOM>
+    <EncodeIllegalCharacters>true</EncodeIllegalCharacters>
+    <GenerateAsyncOperations>false</GenerateAsyncOperations>
+    <ImplementSerializable>true</ImplementSerializable>
+    <ImplementParcelable>false</ImplementParcelable>
+    <AddAnyCollection>false</AddAnyCollection>
+    <DateTimeSupport>Default</DateTimeSupport>
+    <Repackage/>
+    <GenerateHtmlDocumentation>false</GenerateHtmlDocumentation>
+    <AddDataSetSupport>false</AddDataSetSupport>
+    <PlatformType>Java</PlatformType>
+    <Annotations>None</Annotations>
+    <AddLibraries>true</AddLibraries>
+    <GenerateGetSetMethods>false</GenerateGetSetMethods>
+    <DetectDictionaries>false</DetectDictionaries>
+  </Settings>
+  <Files>
+    <File>LKNDateTimeConverter.java</File>
+    <File>LKNExtendedSoapSerializationEnvelope.java</File>
+    <File>LKNHelper.java</File>
+    <File>LKNKPSPublicSoap.java</File>
+    <File>LKNKPSPublicSoap12.java</File>
+    <File>LKNMarshalGuid.java</File>
+    <File>LKNStandardDateTimeConverter.java</File>
+  </Files>
+  <Libraries>
+    <File>ExKsoap2-1.0.4.0.jar</File>
+    <File>ksoap2-android-assembly-3.6.4-jar-with-dependencies.jar</File>
+  </Libraries>
+</EasyWSDL>
