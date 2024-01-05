@@ -1,0 +1,21 @@
+* terminale "npm init" yazıp node.js'i başlatıyoruz..
+* daha sonra gelen seçeneklerde projeadı,versiyon,yazar vs. doldurup package.json' u oluşturuyor.
+* daha sonra index.js' i oluşturuyoruz.
+* çalıştırmak için terminale "npm index.js" yazıyoruz.
+* paket indirmek için "npm i package_name" kullanıyoruz.
+* Yüklediğimiz her paket package.json'un içinde dependencies'de de gözüküyor.
+* node_modules silinse bile veya başka birinin projesini aldığınızda gelmezse "npm install"
+yazıyoruz package.json > dependencies' e bakarak gerekli modülleri tekrar kendisi yüklüyor.
+* ES6 ile gelen modül sistemi ile require(common.js) yerine import(module) kullanabiliyoruz.
+ package.json içinde "type":"module" yazarak artık packageları import ile çağırabiliyoruz.
+Ör: import slu from "slugify"; //istediğimiz isim (slu) ile çağırabiliyoruz.
+
+* react kurulum => npm i -g create-react-app
+		=> npx create-react-app my-app //my-app dosyanın ismi
+		=> cd my-app
+		=> npm start ile react yeni bir sayfa açar yan sekmede
+		=> ctrl + c ile proje durdurulabilir.
+* Component baş harfi büyük olmalı.
+* react içinde bulunan "prop-types" ile gelen değişkenlerin tiplerini zorunlu hale getirtebiliyoruz veya default değerlerini verebiliyoruz.
+
+
