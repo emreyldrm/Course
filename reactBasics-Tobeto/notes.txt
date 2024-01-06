@@ -17,5 +17,10 @@ yazıyoruz package.json > dependencies' e bakarak gerekli modülleri tekrar kend
 		=> ctrl + c ile proje durdurulabilir.
 * Component baş harfi büyük olmalı.
 * react içinde bulunan "prop-types" ile gelen değişkenlerin tiplerini zorunlu hale getirtebiliyoruz veya default değerlerini verebiliyoruz.
-
-
+* useState de array' e yeni bir eleman eklerken yani setArray yaptığında aslında diziye en baştan bütün değerleri gönderiyorsun o yüzden burada kullanılan "...array" ifadesi önemli.
+* useState de object ler içinde aynı şey geçerli "...object" kullanımı önemli değişime uğramadan önceki halini getir ondan sonra değiştir denilebiliyor.
+* useEffect tüm state e eklenmiş değişkenler için çalışır (değeri değişenler için).
+* useEffect sadece belirli değişkenler için çalışmasını istiyorsanız [var1,var2] şeklinde belirtmeniz lazım.
+* boolean && expression doğru ise expression' ı çalıştır yanlışsa çalıştırma demektir.
+* Yukarıdaki ile benzer işlemi yapan tanımlama => "boolean ? expression1 : expression2" burada yanlış olduğunda exp2 yi döndüyor ama yukarıdakinde bir şey döndürmüyor.
+* Css dosyalarının sonunu ".module.css" yaparsan çakışma önleniyor.

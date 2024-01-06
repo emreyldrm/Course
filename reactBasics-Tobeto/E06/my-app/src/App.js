@@ -4,7 +4,17 @@ import Variables from "./components/Variables.js"
 import Props from "./components/Props.js"
 import Loop from "./components/Loop.js"
 import UserDetail from "./components/UserDetail.js"
+import UsingState from "./components/UsingState.js"
+import StateArray from "./components/StateArray.js"
+import StateObject from "./components/StateObject.js"
+import StateInput from "./components/StateInput.js"
+import StateInput2 from "./components/StateInput2.js"
+import UsingUseEffect from "./components/UsingUseEffect.js"
+import MountUnmount from "./components/MountUnmount.js"
+import UsingCss from "./components/UsingCss.js"
+import UsingCssModule from "./components/CssModule/UsingCssModule.js"
 import './App.css';
+import { useState } from 'react';
 
 const info = {
   title: "Lorem, ipsum dolor.",
@@ -29,9 +39,12 @@ const users = [
     userName: "Zack",
     company:"Z Comp."
   },
-]
+];
+
 
 function App() {
+  const [isVisible,setIsVisible] = useState(true);
+
   return (
     
     // <div className="App">
@@ -64,8 +77,21 @@ function App() {
     // <div>
     //   <Loop users={users}/>
     // </div>
+    // <div>
+    //   <UserDetail name={"Murat Başeren"} age={"30"} hobbies={["book","guitar","coding"]} address={{detail:"adresim", zipcode:80090}} />
+    // </div>
     <div>
-      <UserDetail name={"Murat Başeren"} age={"30"} hobbies={["book","guitar","coding"]} address={{detail:"adresim", zipcode:80090}} />
+      {/* <UsingState /> */}
+      {/* <StateObject /> */}
+      {/* <StateInput /> */}
+      {/* <StateInput2 /> */}
+      {/* <UsingUseEffect /> */}
+      {/* <div>
+        {isVisible && <MountUnmount />}
+        <button onClick={() => setIsVisible(!isVisible)}>Göster/Gizle MountUnmount Component</button>
+      </div> */}
+      {/* <UsingCss /> */}
+      <UsingCssModule />
     </div>
   );
 }
