@@ -24,3 +24,18 @@ yazıyoruz package.json > dependencies' e bakarak gerekli modülleri tekrar kend
 * boolean && expression doğru ise expression' ı çalıştır yanlışsa çalıştırma demektir.
 * Yukarıdaki ile benzer işlemi yapan tanımlama => "boolean ? expression1 : expression2" burada yanlış olduğunda exp2 yi döndüyor ama yukarıdakinde bir şey döndürmüyor.
 * Css dosyalarının sonunu ".module.css" yaparsan çakışma önleniyor.
+
+* fetch ile veri çekme;
+* Mount olduktan sonra veriyi çekmek istiyoruz bu yüzden useEffect'in içine fetch yapıyoruz.
+* fetch("url")     //(Promise)async olarak çalışır o yüzden devamında .then kullanıyoruz.
+* .then((res) => res.json())    // (Promise) async olarak çalışıyor devamında yine .then kullanıyoruz.
+* .then((data) => setState_Name(data))   //daha sonra tanımladığımız state değişkenine bu verileri alabiliyoruz.
+* npm i axios devreye aldık //.then json a çevirme kısmını kullanmadan kendi içinde res.data şeklinde kullanabiliyoruz. Diğer yazılımları aynı.
+* npm i react-router-dom devreye aldık //sayfalar arası geçişi componentler arasında yapmak için.
+*<Outlet /> ile sayfadan ayrılmadan sayfa için başka bir şey yükleyebiliyoruz.
+
+* npm i formik devreye aldık.
+* form label'ının içinde onSubmit={formik.handleSubmit} özelliğini kullanıyoruz.
+* formik.handleChange inputun içine yazdığımız bölüm değişikliği inputtaki name attribute'undan alıyor.
+* value={formik.values.propertyName} ilk gönderdiğimiz değerleri alabiliyoruz.
+* optional chaining (?.) json da bir objenin alt özelliklerine erişmek istersen hata veriyor o yüzden ?. kullanarak kontrol etmesini sağlıyorsun ve hata çözülüyor.
