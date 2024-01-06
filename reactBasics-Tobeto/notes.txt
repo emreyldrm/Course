@@ -39,3 +39,7 @@ yazıyoruz package.json > dependencies' e bakarak gerekli modülleri tekrar kend
 * formik.handleChange inputun içine yazdığımız bölüm değişikliği inputtaki name attribute'undan alıyor.
 * value={formik.values.propertyName} ilk gönderdiğimiz değerleri alabiliyoruz.
 * optional chaining (?.) json da bir objenin alt özelliklerine erişmek istersen hata veriyor o yüzden ?. kullanarak kontrol etmesini sağlıyorsun ve hata çözülüyor.
+
+* redux için react projesi oluşturduk
+* npm i react-redux paketini ekledik.
+* npm i @reduxjs/toolkit paketini ekledik.
