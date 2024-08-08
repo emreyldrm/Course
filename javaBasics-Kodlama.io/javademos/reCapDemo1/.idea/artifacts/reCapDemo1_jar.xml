@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="reCapDemo1:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/reCapDemo1_jar</output-path>
+    <root id="archive" name="reCapDemo1.jar">
+      <element id="module-output" name="reCapDemo1" />
+    </root>
+  </artifact>
+</component>
