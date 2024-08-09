@@ -5,6 +5,10 @@ import java.util.Arrays;
 public class Main {
 
     public static boolean isFind(int[] list, int value){
+        //Since the default value is 0,
+        //if the incoming value is 0,
+        //I have to say it's not in the array.
+        //so I return "false"
         if (value == 0){
             return false;
         }
@@ -30,7 +34,7 @@ public class Main {
                 zeroCount++;
             }
         }
-        //Do not process if there is no 0 in the array! Otherwise, do it!
+        //Do not process if there is no 0 or there is just one 0 in the array! Otherwise, do it!
         if (zeroCount > 0){
             zeroCount -= 1;
         }
