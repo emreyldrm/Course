@@ -40,7 +40,7 @@ public class Main {
         System.out.println("Count Array(for all elements): " + Arrays.toString(countArray));
         System.out.println("Repeating Array(precise location): " + Arrays.toString(repeatingNumbers));
 
-        //print the
+        //prints repeating numbers and the number of repetitions
         for(int i = 0; i < repeatingNumbers.length; i++){
             if (repeatingNumbers[i] != 0){
                 System.out.println("The number " + repeatingNumbers[i] + " was repeated " + countArray[i] + " times");
