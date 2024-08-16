@@ -46,8 +46,5 @@ public class Main {
                 System.out.println("The number " + repeatingNumbers[i] + " was repeated " + countArray[i] + " times");
             }
         }
-
-
-
     }
 }
